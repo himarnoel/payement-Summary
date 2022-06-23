@@ -1,0 +1,711 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+body {
+    font-family: 'poppins', sans-serif;
+    background-color: rgb(214, 225, 255);
+    font-size: 1rem;
+    overflow-x: hidden;
+    font-weight: 1.4;
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    place-content: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (min-width:300px) {
+    .body {
+        height: 75vh;
+        width: 88vw;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+        background-color: white;
+    }
+    .illus {
+        height: 22vh;
+        width: 88vw;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .inbod {
+        height: 53vh;
+        width: 88vw;
+        display: flex;
+        /* background-color: violet; */
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .title {
+        width: 88vw;
+        display: grid;
+        place-items: center;
+        font-weight: bold;
+        font-size: 1.6rem;
+    }
+    .mess {
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(149, 156, 170);
+    }
+    .card {
+        background-color: rgb(248, 249, 254);
+        border-radius: 10px;
+        margin-bottom: 3%;
+        margin-top: 3%;
+        height: 7vh;
+        padding-left: 1%;
+        padding-right: 2.5%;
+        width: 67vw;
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+    }
+    .plan {
+        width: 41vw;
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+    .change {
+        font-size: 0.7rem;
+        font-weight: 600;
+        color: rgb(80, 73, 171);
+    }
+    .icon {
+        height: 6vh;
+        width: 12vw;
+        margin-left: 1%;
+        margin-right: 6%;
+    }
+    .price {
+        color: rgb(156, 163, 189);
+    }
+    button {
+        height: 6vh;
+        width: 70vw;
+        border: none;
+        color: white;
+        box-shadow: 2px 5px 5px 3px rgb(221, 214, 250);
+        border-radius: 9.6px;
+        background-color: rgb(56, 42, 225);
+    }
+    .btn {
+        text-decoration: none;
+        font-size: 0.7rem;
+        font-weight: bold;
+        color: rgb(140, 143, 170);
+    }
+}
+
+@media screen and (min-width:400px) {
+    .body {
+        height: 80vh;
+        width: 55vw;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+        background-color: white;
+    }
+    .illus {
+        height: 28vh;
+        width: 55vw;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .inbod {
+        height: 50vh;
+        width: 55vw;
+        display: flex;
+        /* background-color: violet; */
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .title {
+        width: 50vw;
+        display: grid;
+        place-items: center;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    .mess {
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 10px;
+        font-weight: 500;
+        color: rgb(149, 156, 170);
+    }
+    .card {
+        background-color: rgb(248, 249, 254);
+        border-radius: 7px;
+        margin-bottom: 3%;
+        margin-top: 3%;
+        height: 10vh;
+        padding-left: 2%;
+        padding-right: 3%;
+        width: 45vw;
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+    }
+    .plan {
+        width: 25vw;
+        font-size: 0.6rem;
+        font-weight: bold;
+    }
+    .change {
+        font-size: 0.6rem;
+        font-weight: 600;
+        color: rgb(80, 73, 171);
+    }
+    .icon {
+        height: 6 vh;
+        width: 7vw;
+        margin-left: 0;
+        margin-right: 1%;
+    }
+    .price {
+        color: rgb(156, 163, 189);
+    }
+    button {
+        height: 6vh;
+        width: 39vw;
+        font-size: 0.6rem;
+        border: none;
+        color: white;
+        box-shadow: 2px 5px 5px 3px rgb(221, 214, 250);
+        border-radius: 9.6px;
+        background-color: rgb(56, 42, 225);
+    }
+    .btn {
+        text-decoration: none;
+        font-size: 0.6rem;
+        font-weight: bold;
+        color: rgb(140, 143, 170);
+    }
+}
+
+@media screen and (min-width:500px) {
+    .body {
+        height: 90vh;
+        width: 50vw;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+        background-color: white;
+    }
+    .illus {
+        height: 28vh;
+        width: 50vw;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .inbod {
+        height: 58vh;
+        width: 50vw;
+        display: flex;
+        /* background-color: violet; */
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .title {
+        width: 50vw;
+        display: grid;
+        place-items: center;
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
+    .mess {
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 500;
+        color: rgb(149, 156, 170);
+    }
+    .card {
+        background-color: rgb(248, 249, 254);
+        border-radius: 7px;
+        margin-bottom: 3%;
+        margin-top: 3%;
+        height: 12vh;
+        padding-left: 2%;
+        padding-right: 3%;
+        width: 45vw;
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+    }
+    .plan {
+        width: 25vw;
+        font-size: 0.6rem;
+        font-weight: bold;
+    }
+    .change {
+        font-size: 0.7rem;
+        font-weight: 600;
+        color: rgb(80, 73, 171);
+    }
+    .icon {
+        height: 8vh;
+        width: 7vw;
+        margin-left: 0;
+        margin-right: 1%;
+    }
+    .price {
+        color: rgb(156, 163, 189);
+    }
+    button {
+        height: 8vh;
+        width: 39vw;
+        border: none;
+        color: white;
+        box-shadow: 2px 5px 5px 3px rgb(221, 214, 250);
+        border-radius: 9.6px;
+        background-color: rgb(56, 42, 225);
+    }
+    .btn {
+        text-decoration: none;
+        font-size: 0.7rem;
+        font-weight: bold;
+        color: rgb(140, 143, 170);
+    }
+}
+
+@media screen and (min-width:576px) {
+    .body {
+        height: 90vh;
+        width: 43vw;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+        background-color: white;
+    }
+    .illus {
+        height: 28vh;
+        width: 43vw;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .inbod {
+        height: 58vh;
+        width: 43vw;
+        display: flex;
+        /* background-color: violet; */
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .title {
+        width: 50vw;
+        display: grid;
+        place-items: center;
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
+    .mess {
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 500;
+        color: rgb(149, 156, 170);
+    }
+    .card {
+        background-color: rgb(248, 249, 254);
+        border-radius: 7px;
+        margin-bottom: 3%;
+        margin-top: 3%;
+        height: 12vh;
+        padding-left: 2%;
+        padding-right: 3%;
+        width: 38vw;
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+    }
+    .plan {
+        width: 25vw;
+        font-size: 0.6rem;
+        font-weight: bold;
+    }
+    .change {
+        font-size: 0.7rem;
+        font-weight: 600;
+        color: rgb(80, 73, 171);
+    }
+    .icon {
+        height: 8vh;
+        width: 6vw;
+        margin-left: 0;
+        margin-right: 5%;
+    }
+    .price {
+        color: rgb(156, 163, 189);
+    }
+    button {
+        height: 8vh;
+        width: 39vw;
+        border: none;
+        font-size: 0.7rem;
+        color: white;
+        box-shadow: 2px 5px 5px 3px rgb(221, 214, 250);
+        border-radius: 9.6px;
+        background-color: rgb(56, 42, 225);
+    }
+    .btn {
+        text-decoration: none;
+        font-size: 0.7rem;
+        font-weight: bold;
+        color: rgb(140, 143, 170);
+    }
+}
+
+@media screen and (min-width:768px) {
+    .body {
+        height: 87vh;
+        width: 43vw;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+        background-color: white;
+    }
+    .illus {
+        height: 26vh;
+        width: 43vw;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .inbod {
+        height: 58vh;
+        width: 43vw;
+        display: flex;
+        /* background-color: violet; */
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .title {
+        width: 50vw;
+        display: grid;
+        place-items: center;
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
+    .mess {
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(149, 156, 170);
+    }
+    .card {
+        background-color: rgb(248, 249, 254);
+        border-radius: 7px;
+        margin-bottom: 3%;
+        margin-top: 3%;
+        height: 12vh;
+        padding-left: 2%;
+        padding-right: 3%;
+        width: 38vw;
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+    }
+    .plan {
+        width: 25vw;
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+    .change {
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: rgb(80, 73, 171);
+    }
+    .icon {
+        height: 8vh;
+        width: 7vw;
+        margin-left: 2%;
+        margin-right: 5%;
+    }
+    .price {
+        color: rgb(156, 163, 189);
+    }
+    button {
+        height: 8vh;
+        width: 39vw;
+        border: none;
+        font-size: 0.7rem;
+        color: white;
+        box-shadow: 2px 5px 5px 3px rgb(221, 214, 250);
+        border-radius: 9.6px;
+        background-color: rgb(56, 42, 225);
+    }
+    .btn {
+        text-decoration: none;
+        font-size: 0.7rem;
+        font-weight: bold;
+        color: rgb(140, 143, 170);
+    }
+}
+
+@media screen and (min-width:992px) {
+    .body {
+        height: 87vh;
+        width: 43vw;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+        background-color: white;
+    }
+    .illus {
+        height: 26vh;
+        width: 43vw;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .inbod {
+        height: 58vh;
+        width: 43vw;
+        display: flex;
+        /* background-color: violet; */
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .title {
+        width: 50vw;
+        display: grid;
+        place-items: center;
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
+    .mess {
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 17px;
+        font-weight: 500;
+        color: rgb(149, 156, 170);
+    }
+    .card {
+        background-color: rgb(248, 249, 254);
+        border-radius: 7px;
+        margin-bottom: 3%;
+        margin-top: 3%;
+        height: 12vh;
+        padding-left: 2%;
+        padding-right: 3%;
+        width: 38vw;
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+    }
+    .plan {
+        width: 25vw;
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+    .change {
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: rgb(80, 73, 171);
+    }
+    .icon {
+        height: 9vh;
+        width: 7vw;
+        margin-left: 1%;
+        margin-right: 5%;
+    }
+    .price {
+        color: rgb(156, 163, 189);
+    }
+    button {
+        height: 8vh;
+        width: 39vw;
+        border: none;
+        font-size: 0.7rem;
+        color: white;
+        box-shadow: 2px 5px 5px 3px rgb(221, 214, 250);
+        border-radius: 9.6px;
+        background-color: rgb(56, 42, 225);
+    }
+    .btn {
+        text-decoration: none;
+        font-size: 0.7rem;
+        font-weight: bold;
+        color: rgb(140, 143, 170);
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .body {
+        height: 90vh;
+        width: 33vw;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+        background-color: white;
+    }
+    .illus {
+        height: 30vh;
+        width: 33vw;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .inbod {
+        height: 58vh;
+        width: 33vw;
+        display: flex;
+        /* background-color: violet; */
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .title {
+        width: 50vw;
+        display: grid;
+        place-items: center;
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
+    .mess {
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 500;
+        color: rgb(149, 156, 170);
+    }
+    .card {
+        height: 12vh;
+        width: 24vw;
+        background-color: rgb(248, 249, 254);
+        border-radius: 7px;
+        margin-bottom: 3%;
+        margin-top: 3%;
+        padding-left: 2%;
+        padding-right: 3%;
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+    }
+    .plan {
+        width: 25vw;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .change {
+        font-size: 0.8 rem;
+        font-weight: 600;
+        color: rgb(80, 73, 171);
+    }
+    .icon {
+        height: 8vh;
+        width: 4vw;
+        margin-left: 1%;
+        margin-right: 5%;
+    }
+    .price {
+        color: rgb(156, 163, 189);
+    }
+    button {
+        height: 8vh;
+        width: 30vw;
+        border: none;
+        font-size: 1.1rem;
+        color: white;
+        box-shadow: 2px 5px 5px 3px rgb(221, 214, 250);
+        border-radius: 9.6px;
+        background-color: rgb(56, 42, 225);
+    }
+    .btn {
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: rgb(140, 143, 170);
+    }
+}
+
+@media screen and (min-width:1400px) {
+    .body {
+        height: 90vh;
+        width: 43vw;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+        background-color: white;
+    }
+    .illus {
+        height: 28vh;
+        width: 43vw;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .inbod {
+        height: 58vh;
+        width: 43vw;
+        display: flex;
+        /* background-color: violet; */
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .title {
+        width: 50vw;
+        display: grid;
+        place-items: center;
+        font-weight: bold;
+        font-size: 2.3rem;
+    }
+    .mess {
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 500;
+        color: rgb(149, 156, 170);
+    }
+    .card {
+        background-color: rgb(248, 249, 254);
+        border-radius: 7px;
+        margin-bottom: 3%;
+        margin-top: 3%;
+        height: 12vh;
+        padding-left: 2%;
+        padding-right: 3%;
+        width: 38vw;
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+    }
+    .plan {
+        width: 25vw;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .change {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: rgb(80, 73, 171);
+    }
+    .icon {
+        height: 8vh;
+        width: 6vw;
+        margin-left: 0;
+        margin-right: 5%;
+    }
+    .price {
+        color: rgb(156, 163, 189);
+    }
+    button {
+        height: 8vh;
+        width: 39vw;
+        border: none;
+        font-size: 1.4rem;
+        color: white;
+        box-shadow: 2px 5px 5px 3px rgb(221, 214, 250);
+        border-radius: 9.6px;
+        background-color: rgb(56, 42, 225);
+    }
+    .btn {
+        text-decoration: none;
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: rgb(140, 143, 170);
+    }
+}
